@@ -6,27 +6,32 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var player: AVAudioPlayer!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func fPressed(_ sender: UIButton) {
-    }
-    @IBAction func ePressed(_ sender: UIButton) {
+
+    
+    @IBAction func cPressed(_ sender: UIButton) {
+        playSound();
+ 
     }
     
-    @IBAction func dPressed(_ sender: UIButton) {
+
+    func playSound() {
+        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
-    @IBAction func gPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func keyPressed(_ sender: UIButton) {
-        print("whatup")
-    }
-    @IBAction func aPressed(_ sender: UIButton) {
-    }
+
 }
+
+
 
