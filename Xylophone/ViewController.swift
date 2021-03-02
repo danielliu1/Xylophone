@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Xylophone
-//
-//  Created by dl1 on 2/28/21.
-//
-
 import UIKit
 import AVFoundation
 
@@ -17,20 +10,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+ 
     
     @IBAction func cPressed(_ sender: UIButton) {
-        playSound();
+        playSound(key: sender.currentTitle!)
  
     }
     
 
-    func playSound() {
-        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
+    func playSound(key: String) {
+        let url = Bundle.main.url(forResource: key, withExtension: "wav")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
     }
-
 }
 
 

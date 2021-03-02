@@ -68,7 +68,7 @@
                                         <rect key="frame" x="0.0" y="236" width="414" height="110"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj6-Df-LbI">
-                                                <rect key="frame" x="8" y="28" width="384" height="110"/>
+                                                <rect key="frame" x="30" y="8" width="384" height="110"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="E">
@@ -92,7 +92,7 @@
                                         <rect key="frame" x="0.0" y="354" width="414" height="110"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byu-82-a86">
-                                                <rect key="frame" x="25" y="40" width="364" height="110"/>
+                                                <rect key="frame" x="25" y="8" width="364" height="110"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="F">
